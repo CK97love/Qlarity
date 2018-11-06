@@ -9,3 +9,18 @@ function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
     document.getElementById("main").style.marginLeft = "0";
 }
+
+function change ()
+{
+  var elem = document.getElementById("follow")
+  if (elem.innerHTML=="Follow") {
+    elem.innerHTML = "Following";
+    elem.style.backgroundColor = "#4CAF50";
+  }
+
+  else {
+    elem.innerHTML = "Follow";
+    elem.style.backgroundColor = "#008CBA";
+  }
+
+}
