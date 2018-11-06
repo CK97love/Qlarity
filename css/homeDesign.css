@@ -5,8 +5,6 @@
     width: 400px;
     padding-left: 40px;
     padding-right: 40px;
-    /* margin-left: 470px;  */
-    /* margin-right: 470px; */
     margin-left: auto;
     margin-right: auto;
 }
@@ -59,8 +57,4 @@
 img.profpic{
   border-radius: 50%;
   margin-top:10px;
-}
-
-.heart:hover {
-  background-color: #cc4b37;
 }
