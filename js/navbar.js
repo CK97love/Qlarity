@@ -12,15 +12,22 @@ function closeNav() {
 
 function change ()
 {
+  var url = window.location.pathname;
+  var filename = url.substring(url.lastIndexOf('/')+1);
   var elem = document.getElementById("follow")
+  var newFollow = document.createElement('a');
+  newFollow.setAttribute('href',filename);
+  newFollow.innerHTML = document.title;
   if (elem.innerHTML=="Follow") {
     elem.innerHTML = "Following";
     elem.style.backgroundColor = "#4CAF50";
+    document.getElementById("sideBarLinks").appendChild(newFollow);
   }
 
   else {
     elem.innerHTML = "Follow";
     elem.style.backgroundColor = "#008CBA";
+    $('#sideBarLinks').children().last().remove();
   }
 
 }
