@@ -1,5 +1,8 @@
 <html>
 <head>
+  <title> qlarity | Post </title>
+  <link rel="stylesheet" href="css/posting.css">
+  <script src="js/tab.js"></script>
   <ul class = "col-sm-12">
     <div id="menu" class= "col-sm-4">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -37,22 +40,77 @@
   </div>
 </ul>
 </head>
+
 <body>
-  <h2>Post a Question/Recommend Something</h2>
-  <h3>What do you recommend or</h3>
-  <h3>What do you need help with?</h3>
-  <form action="//www.html.am/html-codes/textboxes/submitted.cfm">
-    <textarea name="myTextBox" cols="70" rows="5" style="border:1px solid #000000;">Type response here...
-    </textarea>
-    <form action="/action_page.php">
-    <input type="file" name="pic" accept="image/*">
-    <input type="submit">
+  <h2>Post a Question or Recommend Something</h2>
+  <div class="tab">
+    <button class="tablinks" onclick="openCity(event, 'questionTab')">Question</button>
+    <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
+  </div>
+
+  <!-- to post a question -->
+  <div id="questionTab" class="tabcontent">
+    <h3> What do you need help with? </h3>
+    <form class="textInput" action="//www.html.am/html-codes/textboxes/submitted.cfm">
+      <textarea name="myTextBox" cols="70" rows="10" style="border:1px solid #000000;">Type response here...
+      </textarea>
+      <form action="/action_page.php" id="addImage">
+        <input type="file" name="pic" accept="image/*">
+        <br />
+        <!-- <input type="submit"> -->
+      </form>
+      <br />
+      <form action="">
+        <p> Select which skin concern(s) you are addressing: </p>
+        <input type="checkbox" name="concern" /> #acne
+        <input type="checkbox" name="concern" /> #anti-aging
+        <input type="checkbox" name="concern" /> #dryness
+        <input type="checkbox" name="concern" /> #normal
+        <input type="checkbox" name="concern" /> #oily
+        <input type="checkbox" name="concern" /> #pigmentation
+        <input type="checkbox" name="concern" /> #redness
+        <input type="checkbox" name="concern" /> #sensitive
+        <input type="checkbox" name="concern" /> #other
+      </form>
+      <br />
+      <br />
+      <input type="submit" class="submitbutton"/>
     </form>
-    <br />
-  <input type="submit" />
+  </div>
+
+  <!-- to post a recommendation -->
+  <div id="recommendationTab" class="tabcontent" style="display:none">
+    <h3> What do you recommend? </h3>
+    <form class="textInput" action="//www.html.am/html-codes/textboxes/submitted.cfm">
+      <textarea name="myTextBox" cols="70" rows="10" style="border:1px solid #000000;">Type response here...
+      </textarea>
+      <form action="/action_page.php" id="addImage">
+        <input type="file" name="pic" accept="image/*">
+        <br />
+        <!-- <input type="submit"> -->
+      </form>
+      <br />
+      <form action="">
+        <p> Select which skin concern(s) you are addressing: </p>
+        <input type="checkbox" name="concern" /> #acne
+        <input type="checkbox" name="concern" /> #anti-aging
+        <input type="checkbox" name="concern" /> #dryness
+        <input type="checkbox" name="concern" /> #normal
+        <input type="checkbox" name="concern" /> #oily
+        <input type="checkbox" name="concern" /> #pigmentation
+        <input type="checkbox" name="concern" /> #redness
+        <input type="checkbox" name="concern" /> #sensitive
+        <input type="checkbox" name="concern" /> #other
+      </form>
+
+      <br />
+      <br />
+      <input type="submit" class="submitbutton"/>
+    </form>
+
+  </div>
 
 
-  </form>
   <script src="js/navbar.js"></script>
 </body>
 </html>
