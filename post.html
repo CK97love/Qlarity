@@ -42,7 +42,7 @@
 </head>
 
 <body>
-  <h2>Post a Question or Recommend Something</h2>
+  <h2>Ask a Question or Recommend a Product or Routine</h2>
   <div class="tab">
     <button class="tablinks" onclick="openCity(event, 'questionTab')">Question</button>
     <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
@@ -51,21 +51,26 @@
   <!-- to post a question -->
   <div id="questionTab" class="tabcontent">
     <h3> What do you need help with? </h3>
-    <form class="textInput" action="//www.html.am/html-codes/textboxes/submitted.cfm">
-      <textarea name="myTextBox" cols="70" rows="10" style="border:1px solid #000000;">Type response here...
+    <!-- <form class="textInput" action="//www.html.am/html-codes/textboxes/submitted.cfm"> -->
+    <form class="textInput" action="/action_page.php">
+      <fieldset>
+      <textarea name="myTextBox" cols="70" rows="10" style="border:1px solid #000000;" required="required"> Type response here...
       </textarea>
-      <form action="/action_page.php" id="addImage">
-        <input type="file" name="pic" accept="image/*">
-        <br />
-        <!-- <input type="submit"> -->
-      </form>
+      <div id="addImage">
+        <form action="/action_page.php">
+          <input type="file" name="pic" accept="image/*" align="right">
+          <!-- <input type="submit"> -->
+        </form>
+      </div>
       <br />
-      <form action="">
+      <form class="select_tags" required="required">
         <p> Select which skin concern(s) you are addressing: </p>
         <input type="checkbox" name="concern" /> #acne
         <input type="checkbox" name="concern" /> #anti-aging
+        <input type="checkbox" name="concern" /> #combo
         <input type="checkbox" name="concern" /> #dryness
         <input type="checkbox" name="concern" /> #normal
+        <br />
         <input type="checkbox" name="concern" /> #oily
         <input type="checkbox" name="concern" /> #pigmentation
         <input type="checkbox" name="concern" /> #redness
@@ -74,28 +79,36 @@
       </form>
       <br />
       <br />
-      <input type="submit" class="submitbutton"/>
+      <form action="index.html">
+        <input type="submit" class="submitbutton"/>
+      </form>
+    </fieldset>
     </form>
   </div>
 
   <!-- to post a recommendation -->
   <div id="recommendationTab" class="tabcontent" style="display:none">
     <h3> What do you recommend? </h3>
-    <form class="textInput" action="//www.html.am/html-codes/textboxes/submitted.cfm">
-      <textarea name="myTextBox" cols="70" rows="10" style="border:1px solid #000000;">Type response here...
+    <!-- <form class="textInput" action="//www.html.am/html-codes/textboxes/submitted.cfm"> -->
+    <form class="textInput" action="/action_page.php">
+      <fieldset>
+      <textarea name="myTextBox" cols="70" rows="10" style="border:1px solid #000000;" required="required"> Type response here...
       </textarea>
-      <form action="/action_page.php" id="addImage">
-        <input type="file" name="pic" accept="image/*">
-        <br />
+      <div id="addImage">
+        <form action="/action_page.php">
+          <input type="file" name="pic" accept="image/*">
         <!-- <input type="submit"> -->
-      </form>
+        </form>
+      </div>
       <br />
-      <form action="">
+      <form class="select_tags" required="required">
         <p> Select which skin concern(s) you are addressing: </p>
         <input type="checkbox" name="concern" /> #acne
         <input type="checkbox" name="concern" /> #anti-aging
+        <input type="checkbox" name="concern" /> #combo
         <input type="checkbox" name="concern" /> #dryness
         <input type="checkbox" name="concern" /> #normal
+        <br />
         <input type="checkbox" name="concern" /> #oily
         <input type="checkbox" name="concern" /> #pigmentation
         <input type="checkbox" name="concern" /> #redness
@@ -105,7 +118,11 @@
 
       <br />
       <br />
-      <input type="submit" class="submitbutton"/>
+      <!-- <input type="submit" class="submitbutton"/> -->
+      <form action="index.html">
+        <input type="submit" class="submitbutton"/>
+      </form>
+    </fieldset>
     </form>
 
   </div>
