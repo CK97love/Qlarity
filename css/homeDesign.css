@@ -70,6 +70,25 @@ img.profpic{
   background-color: #008CBA;
 }
 
+body {
+  padding-top: 10px;
+  padding-bottom: 25px;
+}
+/* formatting picture, name & time within text box */
+.profpic {
+  margin-left: -50px;
+  border-radius: 50%;
+}
+#name {
+  margin-left: -45px;
+  margin-top: 25px;
+}
+#time {
+  margin-right: 160px;
+  margin-left: -45px;
+  width: 100px;
+}
+
 #comment {
   border-style: solid;
   border-width: 1px;
