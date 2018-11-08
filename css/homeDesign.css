@@ -69,3 +69,14 @@ img.profpic{
   color: white;
   background-color: #008CBA;
 }
+
+#comment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
