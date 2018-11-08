@@ -57,16 +57,17 @@
   padding-left: 25%;
 }
 
-img.profpic{
+.big-profpic{
   border-radius: 50%;
 }
 
 body {
+  padding-top: 10px;
   padding-bottom: 25px;
 }
 
 /* formatting picture, name & time within text box */
-.small-profpic {
+.profpic {
   margin-left: -50px;
   border-radius: 50%;
 }
