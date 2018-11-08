@@ -18,7 +18,7 @@
       <form class="login-form">
         <input type="firstname" placeholder="first name"/>
         <input type="lastname" placeholder="last name"/>
-        <input type="text" placeholder="username"/>
+        <input type="text" placeholder="username" id="username"/>
         <input type="password" placeholder="password"/>
         <input type="email" placeholder="email"/>
         <ul class="col-sm-12">
@@ -26,12 +26,13 @@
             <button type="submit" formaction="signin.html">sign in</button>
           </div>
           <div class="col-sm-6">
-            <button type="submit" formaction="index.html">sign up</button>
+            <button onclick="store()"type="submit" formaction="index.html">sign up</button>
           </div>
         </ul>
       </form>
     </div>
   </div>
-  <script src="js/signin.js"></script>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/signup.js"></script>
 </body>
 </html>
