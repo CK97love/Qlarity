@@ -57,6 +57,7 @@
     <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
   </div>
         <!-- Tab content -->
+        <!-- questions -->
   <div id="questionTab" class="tabcontent">
       <h2 id="heading">Questions</h2>
       <div class="question" id="post">
@@ -84,9 +85,27 @@
               <a href="acne.html">#acne</a>
               </p>
               <p class="feature">
-                  <a href="comments.html"> View Comments (1) </a>
+                  <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (1)</a>
               </p>
         </div>
+        <!-- here is the comment on the post -->
+        <div class="collapse" id="comment">
+          <ul class="col-sm-12">
+            <div class="col-sm-4" id="image">
+              <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+            </div>
+            <div class="col-sm-8">
+              <h2 id="name">
+                Taylor Adams
+              </h2>
+              <p id="time">
+                11:35 am
+              </p>
+            </div>
+          </ul>
+          <p id="postBody">You should try pimple patches. You can order them on Amazon or get them from Target. </p>
+        </div>
+
         <br>
         <div class="question" id="post">
           <ul class="col-sm-12">
@@ -95,7 +114,7 @@
             </div>
             <div class="col-sm-8">
               <h2 id="name">
-                Maria Carr
+                Tonya Daniels
               </h2>
               <p id="time">
                 11:10 am
@@ -103,17 +122,17 @@
             </div>
           </ul>
           <p id="postBody">
-            I have dark spots on my face and I'm looking for a treatment to get lighten them up. Does anyone have any good product recommendations?
+            I usually use benzoyl peroxide acne treatment at night but I don't want to bleach my bedsheets. Does anyone know other good acne treatments without benzoyl peroxide?
           </p>
           <p class="feature">
             <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
             2 Likes
           </p>
           <p class="feature">
-              <a href="pigmentation.html"> #pigmentation </a>
+              <a href="acne.html"> #acne </a>
           </p>
           <p class="feature">
-              <a href="comments.html"> View Comments (2) </a>
+              <a href="comments.html"> View Comments (0) </a>
         </p>
     </div>
         <br>
@@ -124,7 +143,7 @@
             </div>
             <div class="col-sm-8">
               <h2 id="name">
-                Catherine Lopez
+                Megan Lopez
               </h2>
               <p id="time">
                 9:25 am
@@ -132,20 +151,67 @@
             </div>
           </ul>
           <p id="postBody">
-            My skin is super oily and I want a face lotion that won't make me shiny. I've tried Aveeno but it doesn't work.
-            What brand of lotion would work best for me?
+            Does anyone know of any good acne face washes that I can get at the drugstore?
           </p>
               <p class="feature">
                 <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
               2 Likes
               </p>
               <p class="feature">
-              <a href="oily.html">#oily</a>
+              <a href="acne.html">#acne</a>
               </p>
               <p class="feature">
                   <a href="comments.html"> View Comments (0) </a>
               </p>
         </div>
+    </div>
+    <!-- recommendations -->
+    <div id="recommendationTab" class="tabcontent" style="display:none">
+        <h2 id="heading">Recommendations</h2>
+        <div class="question" id="post">
+          <ul class="col-sm-12">
+            <div class="col-sm-4" id="image">
+              <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+            </div>
+            <div class="col-sm-8">
+              <h2 id="name">
+                Anthony Davis
+              </h2>
+            </div>
+        </ul>
+        <p id="time">
+          4:31 pm
+        </p>
+        <p id="postBody">
+          I found a really good treatment for acne. It's the Mario Badescu drying lotion. Just put it on your pimples before you go to sleep and you'll wake up with clearer skin!
+        </p>
+        <p class="feature">
+          <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
+          2 Likes
+        </p>
+        <p class="feature">
+          <a href="acne.html">#acne</a>
+        </p>
+          <p class="feature">
+            <!-- a href="comments.html"> View Comments (1) </a> -->
+            <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (1)</a>
+            <!-- <a class="btn" data-toggle="collapse" data-target=".comment"> View Comments (1) </a> -->
+          </p>
+      </div>
+      <!-- the comment below the original recommendation post -->
+      <div class="collapse" id="comment">
+      <!-- <div class="collapse comment"> -->
+        <ul class="col-sm-12">
+          <div class="col-sm-4" id="image">
+            <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+          </div>
+          <div class="col-sm-8">
+            <h2 id="name"> Katherine Meyer </h2>
+            <p id="time"> 10:35 am </p>
+          </div>
+        </ul>
+          <p id="postBody"> Can confirm, this works so well for me every time I break out. </p>
+      </div>
     </div>
   <script src="js/navbar.js"></script>
   <script src="js/tab.js"></script>

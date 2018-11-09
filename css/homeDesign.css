@@ -20,6 +20,9 @@
 
 #time {
     text-align: left;
+    margin-right: 160px;
+    margin-left: -45px;
+    width: 100px;
 }
 
 #postBody {
@@ -82,11 +85,6 @@ body {
 #name {
   margin-left: -45px;
   margin-top: 25px;
-}
-#time {
-  margin-right: 160px;
-  margin-left: -45px;
-  width: 100px;
 }
 
 #comment {
