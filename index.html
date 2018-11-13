@@ -47,8 +47,8 @@
     <body>
     <!-- Tab links -->
     <div class="tab">
-      <button class="tablinks" onclick="openCity(event, 'questionTab')">Question</button>
-      <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
+      <button class="tablinks" onclick="openCity(event, 'questionTab')"> View Questions </button>
+      <button class="tablinks" onclick="openCity(event, 'recommendationTab')"> View Recommendations </button>
     </div>
     <!-- Tab content -->
     <!-- questions -->
@@ -60,29 +60,29 @@
                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
               </div>
               <div class="col-sm-8">
-                <h2 id="name">
-                  Megan Smith
-                </h2>
-                <p id="time">
-                  4:31 pm
-                </p>
+                <h2 id="name">Megan Smith</h2>
+                <p id="time">4:31 pm</p>
               </div>
             </ul>
             <p id="postBody">
               I've been breaking out and my acne has gotten worse. Can anyone suggest any good spot treatments for pimples?
             </p>
-                <p class="feature">
-                  <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
+            <div class="feature">
+                <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
                 2 Likes
-                </p>
-                <p class="feature">
+                &nbsp; &nbsp;
                 <a href="acne.html">#acne</a>
+<<<<<<< HEAD
                 </p>
                 <p class="feature">
 
                 <!--  <a href="comments.html"> View Comments (0) </a>-->
                   <a class="btn" data-toggle="collapse" data-target="#acnecomment">View Comments (1)</a>
                 </p>
+=======
+                <a class="btn" data-toggle="collapse" data-target="#acnecomment">View Comments (1)</a>
+            </div>
+>>>>>>> 71ef6d768dce61fa969c4388ea43dc2d3a87f4a5
           </div>
 
           <div class="collapse" id="acnecomment">
@@ -91,12 +91,8 @@
                   <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
                 </div>
                 <div class="col-sm-8">
-                  <h2 id="name">
-                    Taylor Adams
-                  </h2>
-                  <p id="time">
-                    11:35 am
-                  </p>
+                  <h2 id="name">Taylor Adams</h2>
+                  <p id="time">11:35 am</p>
                 </div>
               </ul>
               <p id="postBody">You should try pimple patches. You can order them on Amazon or get them from Target. </p>
@@ -109,46 +105,32 @@
                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
               </div>
               <div class="col-sm-8">
-                <h2 id="name">
-                  Maria Carr
-                </h2>
-                <p id="time">
-                  11:10 am
-                </p>
+                <h2 id="name">Maria Carr</h2>
+                <p id="time">11:10 am</p>
               </div>
             </ul>
             <p id="postBody">
               I have dark spots on my face and I'm looking for a treatment to lighten them up. Does anyone have any good product recommendations?
             </p>
-            <div class="bottomLine">
-              <p class="feature">
+            <div class="feature">
                 <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
                 2 Likes
-              </p>
-              <p class="feature">
+                &nbsp; &nbsp;
                 <a href="pigmentation.html"> #pigmentation </a>
-              </p>
-              <p class="feature">
-               <!-- <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (2)</a> -->
-                <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (2) </a>
-              </p>
+                <a class="btn" data-toggle="collapse" data-target="#maria_comments"> View Comments (2) </a>
             </div>
            </div>
            <!--these are the comments -->
 
            <!-- <div class="collapse" id="comment"> -->
-           <div class="collapse" id="comment">
+           <div class="collapse" id="maria_comments">
              <ul class="col-sm-12">
                <div class="col-sm-4" id="image">
                  <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
                </div>
                <div class="col-sm-8">
-                 <h2 id="name">
-                   Christine Smith
-                 </h2>
-                 <p id="time">
-                   11:35 am
-                 </p>
+                 <h2 id="name">Christine Smith</h2>
+                 <p id="time">11:35 am</p>
                </div>
              </ul>
              <p id="postBody">Hi Maria, I've tried BioOil oil and it works really well!</p>
@@ -159,42 +141,11 @@
                  <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
                </div>
                <div class="col-sm-8">
-                 <h2 id="name">
-                   Andy Robinson
-                 </h2>
-                 <p id="time">
-                   1:25 pm
-                 </p>
+                 <h2 id="name">Andy Robinson</h2>
+                 <p id="time">1:25 pm</p>
               </div>
          </ul>
             <p id="postBody">Hey Maria, rosehip seed oil has worked so well for me. I suggest you try it too!</p>
-
-             <!--<p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>-->
-<!--
-          <div id="postcomment">
-            <ul class="col-sm-12">
-              <div class="col-sm-4" id="image">
-                <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
-              </div>
-              <div class="col-sm-8">
-                <h2 id="name">
-                  Jessica Ngo
-                </h2>
-            <p id="time">
-              12:00 pm
-            </p>
-          </div>
-        </ul> -->
-        <!--
-        <form class="textInput">
-          <fieldset>
-          <textarea id="textbox" name="myTextBox" cols="40" rows="5" style="border:1px solid #000000;" required="required"> Type response here...
-          </textarea>
-          <form action="index.html">
-            <input type="submit" class="submitbutton"/>
-          </form>
-        </fieldset>
-      </form> -->
             </div>
            </div>
           <br>
@@ -205,31 +156,32 @@
                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
               </div>
               <div class="col-sm-8">
-                <h2 id="name">
-                  Catherine Lopez
-                </h2>
-                <p id="time">
-                  9:25 am
-                </p>
+                <h2 id="name">Catherine Lopez</h2>
+                <p id="time">9:25 am</p>
               </div>
             </ul>
             <p id="postBody">
               My skin is super oily and I want a face lotion that won't make me shiny. I've tried Aveeno but it doesn't work.
               What brand of lotion would work best for me?
             </p>
-                <p class="feature">
-                  <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
+            <div class="feature">
+                <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
                 2 Likes
-                </p>
-                <p class="feature">
+                &nbsp; &nbsp;
                 <a href="oily.html">#oily</a>
+<<<<<<< HEAD
                 </p>
                 <p class="feature">
                   <!--  <a href="index.html"> View Comments (0) </a> -->
                     <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (0) </a>
                 </p>
               </div>
+=======
+                <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (0) </a>
+>>>>>>> 71ef6d768dce61fa969c4388ea43dc2d3a87f4a5
             </div>
+          </div>
+        </div>
 
         <!-- recommendations -->
             <div id="recommendationTab" class="tabcontent" style="display:none">
@@ -240,6 +192,7 @@
                       <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
                     </div>
                     <div class="col-sm-8">
+<<<<<<< HEAD
                       <h2 id="name">
                         Anthony Davis
                       </h2>
@@ -248,20 +201,22 @@
                 </p>
               </div>
             </ul>
+=======
+                      <h2 id="name">Anthony Davis</h2>
+                      <p id="time">4:31 pm</p>
+                    </div>
+                  </ul>
+>>>>>>> 71ef6d768dce61fa969c4388ea43dc2d3a87f4a5
                 <p id="postBody">
                   I found a really good treatment for acne. It's the Mario Badescu drying lotion. Just put it on your pimples before you go to sleep and you'll wake up with clearer skin!
                 </p>
-                <p class="feature">
+                <div class="feature">
                   <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
                   2 Likes
-                </p>
-                <p class="feature">
+                  &nbsp; &nbsp;
                   <a href="acne.html">#acne</a>
-                </p>
-                  <p class="feature">
-                    <!-- a href="comments.html"> View Comments (1) </a> -->
-                    <a class="btn" data-toggle="collapse" data-target="#reccomment">View Comments (1)</a>
-                  </p>
+                  <a class="btn" data-toggle="collapse" data-target="#reccomment">View Comments (1)</a>
+                </div>
               </div>
               <!-- the comment below the original recommendation post -->
               <div class="collapse" id="reccomment">

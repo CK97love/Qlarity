@@ -1,5 +1,7 @@
 <html>
 <head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/welcomeMessage.js"></script>
   <ul class = "col-sm-12">
     <div id="menu" class= "col-sm-4">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -36,7 +38,7 @@
     <p id="logo"><a href="index.html"> qlarity </a></p>
   </div>
   <div id="signout" class = "col-sm-4">
-    <p>Welcome, Jessica!</p>
+    <p onload="getUsername()" id="welcomeMessage"></p>
     <p><a href="signin.html"> Sign Out </a></p>
   </div>
 </ul>
@@ -52,8 +54,8 @@
   </ul>
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'questionTab')">Question</button>
-  <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
+  <button class="tablinks" onclick="openCity(event, 'questionTab')">View Questions</button>
+  <button class="tablinks" onclick="openCity(event, 'recommendationTab')">View Recommendations</button>
 </div>
 <!-- Tab content -->
 <!-- questions -->
@@ -65,45 +67,32 @@
             <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
           </div>
           <div class="col-sm-8">
-            <h2 id="name">
-              Elana Polk
-            </h2>
-            <p id="time">
-              11:10 am
-            </p>
+            <h2 id="name">Elana Polk</h2>
+            <p id="time">11:10 am</p>
           </div>
         </ul>
         <p id="postBody">
           I have a lot of redness from my acne and I don't know how to tone it down. Can anyone give me any suggestions?
         </p>
-        <p class="feature">
+        <div class="feature">
           <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
           3 Likes
-        </p>
-        <p class="feature">
-            <a href="redness.html"> #redness </a>
-        </p>
-
-       <p class="feature">
-           <!-- <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (2)</a> -->
-           <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (1) </a>
-       </p>
+          &nbsp; &nbsp;
+          <a href="redness.html"> #redness </a>
+          <a class="btn" data-toggle="collapse" data-target="#q-firstcomment"> View Comments (1) </a>
        </div>
+      </div>
        <!--these are the comments -->
 
        <!-- <div class="collapse" id="comment"> -->
-       <div class="collapse" id="comment">
+       <div class="collapse" id="q-firstcomment">
          <ul class="col-sm-12">
            <div class="col-sm-4" id="image">
              <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
            </div>
            <div class="col-sm-8">
-             <h2 id="name">
-               Kailee Geller
-             </h2>
-             <p id="time">
-               11:35 am
-             </p>
+             <h2 id="name">Kailee Geller</h2>
+             <p id="time">11:35 am</p>
            </div>
          </ul>
          <p id="postBody"> You can try green color-correcting concealer if you don't mind using makeup.
@@ -118,33 +107,22 @@
             <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
           </div>
           <div class="col-sm-8">
-            <h2 id="name">
-              Annika Nelson
-            </h2>
-            <p id="time">
-              9:25 am
-            </p>
+            <h2 id="name">Annika Nelson</h2>
+            <p id="time">9:25 am</p>
           </div>
         </ul>
         <p id="postBody">
            I have patches of redness on my cheeks on seemingly random days that I want to get rid of. Does anyone know good products for treating redness?
         </p>
-            <p class="feature">
-              <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
+        <div class="feature">
+            <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
             0 Likes
-            </p>
-            <p class="feature">
+            &nbsp; &nbsp;
             <a href="redness.html">#redness</a>
-            </p>
-            <p class="feature">
-<<<<<<< HEAD
-                <a href="redness.html"> View Comments (0) </a>
-=======
-                <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (0) </a>
->>>>>>> 3b1aed4779fd6cb690d4326862789305b9cef53c
-            </p>
-          </div>
+            <a class="btn" data-toggle="collapse" data-target="#q-secondcomment"> View Comments (0) </a>
         </div>
+      </div>
+    </div>
 
     <!-- recommendations -->
         <div id="recommendationTab" class="tabcontent" style="display:none">
@@ -155,37 +133,23 @@
                   <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
                 </div>
                 <div class="col-sm-8">
-                  <h2 id="name">
-                    Sophia Walker
-                  </h2>
-<<<<<<< HEAD
-            <p id="time">
-              4:31 pm
-            </p>
-          </div>
-      </ul>
-=======
-                  <p id="time"> 4:31 pm </p>
+                  <h2 id="name">Sophia Walker</h2>
+                  <p id="time">4:31 pm</p>
                 </div>
-            </ul>
->>>>>>> 3b1aed4779fd6cb690d4326862789305b9cef53c
+              </ul>
             <p id="postBody">
               It Cosmetics Bye Bye Redness is so good for toning down redness! I use it every day and it works wonders!
             </p>
-            <p class="feature">
+            <div class="feature">
               <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
               10 Likes
-            </p>
-            <p class="feature">
+              &nbsp; &nbsp;
               <a href="redness.html">#redness</a>
-            </p>
-              <p class="feature">
-                <!-- a href="comments.html"> View Comments (1) </a> -->
-                <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (0)</a>
-              </p>
+              <a class="btn" data-toggle="collapse" data-target="#r-firstcomment">View Comments (1)</a>
+            </div>
           </div>
           <!-- the comment below the original recommendation post -->
-          <div class="collapse" id="comment">
+          <div class="collapse" id="r-firstcomment">
             <ul class="col-sm-12">
               <div class="col-sm-4" id="image">
                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">

@@ -1,5 +1,7 @@
 <html>
 <head>
+  <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script src="js/welcomeMessage.js"></script>
   <ul class = "col-sm-12">
     <div id="menu" class= "col-sm-4">
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -36,7 +38,7 @@
     <p id="logo"><a href="index.html"> qlarity </a></p>
   </div>
   <div id="signout" class = "col-sm-4">
-    <p>Welcome, Jessica!</p>
+    <p onload="getUsername()" id="welcomeMessage"></p>
     <p><a href="signin.html"> Sign Out </a></p>
   </div>
 </ul>
@@ -52,8 +54,8 @@
   </ul>
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'questionTab')">Question</button>
-  <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
+  <button class="tablinks" onclick="openCity(event, 'questionTab')">View Questions</button>
+  <button class="tablinks" onclick="openCity(event, 'recommendationTab')">View Recommendations</button>
 </div>
 <!-- Tab content -->
 <!-- questions -->
@@ -65,45 +67,32 @@
             <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
           </div>
           <div class="col-sm-8">
-            <h2 id="name">
-              Janel Johnson
-            </h2>
-            <p id="time">
-              11:10 am
-            </p>
+            <h2 id="name">Janel Johnson</h2>
+            <p id="time">11:10 am</p>
           </div>
         </ul>
         <p id="postBody">
           I have such oily skin and I still haven't found a moisturizer that keeps my skin matte all day. Does anyone have any recommendations at all for me?
         </p>
-        <p class="feature">
+        <div class="feature">
           <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
           3 Likes
-        </p>
-        <p class="feature">
-            <a href="oily.html"> #oily </a>
-        </p>
-
-       <p class="feature">
-           <!-- <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (2)</a> -->
-           <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (2) </a>
-       </p>
+          &nbsp; &nbsp;
+          <a href="oily.html"> #oily </a>
+          <a class="btn" data-toggle="collapse" data-target="#q-firstcomment"> View Comments (2) </a>
+        </div>
        </div>
        <!--these are the comments -->
 
        <!-- <div class="collapse" id="comment"> -->
-       <div class="collapse" id="comment">
+       <div class="collapse" id="q-firstcomment">
          <ul class="col-sm-12">
            <div class="col-sm-4" id="image">
              <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
            </div>
            <div class="col-sm-8">
-             <h2 id="name">
-               Vince Watson
-             </h2>
-             <p id="time">
-               11:35 am
-             </p>
+             <h2 id="name">Vince Watson</h2>
+             <p id="time">11:35 am</p>
            </div>
          </ul>
          <p id="postBody"> Try Aveeno daily moisturizer. It's not targeted towards oily skin, but it works pretty well. </p>
@@ -114,12 +103,8 @@
              <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
            </div>
            <div class="col-sm-8">
-             <h2 id="name">
-               Kristine Wong
-             </h2>
-             <p id="time">
-               1:25 pm
-             </p>
+             <h2 id="name">Kristine Wong</h2>
+             <p id="time">1:25 pm</p>
           </div>
         </div>
      </ul>
@@ -133,33 +118,22 @@
             <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
           </div>
           <div class="col-sm-8">
-            <h2 id="name">
-              Ninki Minjaj
-            </h2>
-            <p id="time">
-              9:25 am
-            </p>
+            <h2 id="name">Ninki Minjaj</h2>
+            <p id="time">9:25 am</p>
           </div>
         </ul>
         <p id="postBody">
           I'm looking for a new face wash for oily skin. I'm using Neutrogena daily wash now but it doesn't do anything to control the oil.
         </p>
-            <p class="feature">
-              <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
+        <div class="feature">
+            <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
             1 Like
-            </p>
-            <p class="feature">
+            &nbsp; &nbsp;
             <a href="oily.html">#oily</a>
-            </p>
-            <p class="feature">
-<<<<<<< HEAD
-                <a href="oily.html"> View Comments (0) </a>
-=======
-                <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (0) </a>
->>>>>>> 3b1aed4779fd6cb690d4326862789305b9cef53c
-            </p>
-          </div>
+            <a class="btn" data-toggle="collapse" data-target="#q-secondcomment"> View Comments (0) </a>
         </div>
+      </div>
+    </div>
 
     <!-- recommendations -->
         <div id="recommendationTab" class="tabcontent" style="display:none">
@@ -170,37 +144,23 @@
                   <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
                 </div>
                 <div class="col-sm-8">
-                  <h2 id="name">
-                    Tyra Banks
-                  </h2>
-<<<<<<< HEAD
-            <p id="time">
-              4:31 pm
-            </p>
-          </div>
-      </ul>
-=======
-                  <p id="time"> 4:31 pm </p>
+                  <h2 id="name">Tyra Banks</h2>
+                  <p id="time">4:31 pm</p>
                 </div>
-            </ul>
->>>>>>> 3b1aed4779fd6cb690d4326862789305b9cef53c
+              </ul>
             <p id="postBody">
               Oil blotting sheets are my holy grail! They come in clutch in the middle of the day and keep my shine under control. Highly recommend to all!
             </p>
-            <p class="feature">
+            <div class="feature">
               <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this)">
               5 Likes
-            </p>
-            <p class="feature">
+              &nbsp; &nbsp;
               <a href="oily.html">#oily</a>
-            </p>
-              <p class="feature">
-                <!-- a href="comments.html"> View Comments (1) </a> -->
-                <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (0)</a>
-              </p>
+              <a class="btn" data-toggle="collapse" data-target="#r-firstcomment">View Comments (1)</a>
+            </div>
           </div>
           <!-- the comment below the original recommendation post -->
-          <div class="collapse" id="comment">
+          <div class="collapse" id="r-firstcomment">
             <ul class="col-sm-12">
               <div class="col-sm-4" id="image">
                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
