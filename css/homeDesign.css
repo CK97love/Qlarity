@@ -143,7 +143,7 @@ body {
   margin-right: auto;
 }
 
-#taylorcomment {
+#taylorcomment, #maria_comments {
   border-style: solid;
   border-width: 1px;
   text-align: center;
@@ -157,4 +157,28 @@ body {
   text-align: center;
   margin-left: -30px;
   width: 400px;
+}
+
+
+/* styles comments on question posts */
+#q-firstcomment, #q-secondcomment, #q-thirdcomment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* styles comments on recommendation posts */
+#r-firstcomment, #r-secondcomment {
+  border-style: solid;
+  border-width: 1px;
+  text-align: center;
+  width: 400px;
+  padding-left: 40px;
+  padding-right: 40px;
+  margin-left: auto;
+  margin-right: auto;
 }

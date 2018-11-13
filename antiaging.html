@@ -54,8 +54,8 @@
   </ul>
 <!-- Tab links -->
 <div class="tab">
-  <button class="tablinks" onclick="openCity(event, 'questionTab')">Question</button>
-  <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
+  <button class="tablinks" onclick="openCity(event, 'questionTab')">View Questions</button>
+  <button class="tablinks" onclick="openCity(event, 'recommendationTab')">View Recommendations</button>
 </div>
 <!-- Tab content -->
 <!-- questions -->
@@ -83,24 +83,20 @@
           2 Likes
           &nbsp; &nbsp;
           <a href="antiaging.html"> #anti-aging </a>
-          <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (2) </a>
+          <a class="btn" data-toggle="collapse" data-target="#q-firstcomment"> View Comments (2) </a>
         </div>
        </div>
        <!--these are the comments -->
 
        <!-- <div class="collapse" id="comment"> -->
-       <div class="collapse" id="comment">
+       <div class="collapse" id="q-firstcomment">
          <ul class="col-sm-12">
            <div class="col-sm-4" id="image">
              <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
            </div>
            <div class="col-sm-8">
-             <h2 id="name">
-               Kayla Waller
-             </h2>
-             <p id="time">
-               11:35 am
-             </p>
+             <h2 id="name">Kayla Waller</h2>
+             <p id="time">11:35 am</p>
            </div>
          </ul>
          <p id="postBody"> Kiehl's has good products for this. You should check them out. </p>
@@ -146,7 +142,7 @@
               2 Likes
               &nbsp; &nbsp;
               <a href="antiaging.html">#anti-aging</a>
-              <a class="btn" data-toggle="collapse" data-target="#comment"> View Comments (0) </a>
+              <a class="btn" data-toggle="collapse" data-target="#q-secondcomment"> View Comments (0) </a>
             </div>
           </div>
         </div>
@@ -174,11 +170,11 @@
               2 Likes
               &nbsp; &nbsp;
               <a href="antiaging.html">#anti-aging</a>
-              <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (0)</a>
+              <a class="btn" data-toggle="collapse" data-target="#r-firstcomment">View Comments (1)</a>
             </div>
           </div>
           <!-- the comment below the original recommendation post -->
-          <div class="collapse" id="comment">
+          <div class="collapse" id="r-firstcomment">
             <ul class="col-sm-12">
               <div class="col-sm-4" id="image">
                 <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">

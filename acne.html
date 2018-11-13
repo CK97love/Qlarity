@@ -56,8 +56,8 @@
 
 
   <div class="tab">
-    <button class="tablinks" onclick="openCity(event, 'questionTab')">Question</button>
-    <button class="tablinks" onclick="openCity(event, 'recommendationTab')">Recommendation</button>
+    <button class="tablinks" onclick="openCity(event, 'questionTab')">View Questions</button>
+    <button class="tablinks" onclick="openCity(event, 'recommendationTab')">View Recommendations</button>
   </div>
         <!-- Tab content -->
         <!-- questions -->
@@ -85,26 +85,22 @@
                 2 Likes
                 &nbsp; &nbsp;
                 <a href="acne.html">#acne</a>
-                <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (0)</a>
+                <a class="btn" data-toggle="collapse" data-target="#q-firstcomment">View Comments (1)</a>
               </div>
+      </div>
         <!-- here is the comment on the post -->
-        <div class="collapse" id="comment">
+        <div class="collapse" id="q-firstcomment">
           <ul class="col-sm-12">
             <div class="col-sm-4" id="image">
               <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
             </div>
             <div class="col-sm-8">
-              <h2 id="name">
-                Taylor Adams
-              </h2>
-              <p id="time">
-                11:35 am
-              </p>
+              <h2 id="name">Taylor Adams</h2>
+              <p id="time">11:35 am</p>
             </div>
           </ul>
           <p id="postBody">You should try pimple patches. You can order them on Amazon or get them from Target. </p>
         </div>
-      </div>
 
         <br>
         <div class="question" id="post">
@@ -129,7 +125,7 @@
             2 Likes
             &nbsp; &nbsp;
             <a href="acne.html"> #acne </a>
-            <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (0)</a>
+            <a class="btn" data-toggle="collapse" data-target="#q-secondcomment">View Comments (0)</a>
           </div>
     </div>
         <br>
@@ -155,7 +151,7 @@
               2 Likes
               &nbsp; &nbsp;
               <a href="acne.html">#acne</a>
-              <a class="btn" data-toggle="collapse" data-target="#comment">View Comments (0)</a>
+              <a class="btn" data-toggle="collapse" data-target="#q-thirdcomment">View Comments (0)</a>
             </div>
         </div>
     </div>
@@ -184,11 +180,11 @@
           6 Likes
           &nbsp; &nbsp;
           <a href="acne.html">#acne</a>
-          <a class="btn" data-toggle="collapse" data-target="#rec2comment">View Comments (0)</a>
+          <a class="btn" data-toggle="collapse" data-target="#r-secondcomment">View Comments (1)</a>
         </div>
       </div>
       <!-- the comment below the original recommendation post -->
-      <div class="collapse" id="rec2comment">
+      <div class="collapse" id="r-secondcomment">
       <!-- <div class="collapse comment"> -->
         <ul class="col-sm-12">
           <div class="col-sm-4" id="image">
@@ -206,5 +202,8 @@
   <script src="js/tab.js"></script>
   <script src="js/heartToggle.js"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 </body>
 </html>
