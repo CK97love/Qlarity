@@ -17,5 +17,3 @@ function changeImage(e, i) {
         x[i].innerHTML = numLikes + " Likes";
     }
 }
-
-
