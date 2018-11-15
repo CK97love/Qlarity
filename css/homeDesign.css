@@ -183,7 +183,11 @@ body {
   margin-right: auto;
 }
 
-/* styles reply box underneath comments */
+/* styles reply div underneath comments */
+#commentName {
+  margin-left: -250px;
+  font-size: 25px;
+}
 .reply {
   border-style: solid;
   border-width: 0px;
@@ -192,6 +196,7 @@ body {
   height: 225px;
   margin-left: -42px;
 }
+/* the actual text box */
 .replyBox {
   width: 300px;
   height: 100px;
@@ -200,4 +205,21 @@ body {
 .replyButton {
   margin-left: 200px;
   margin-top: 10px;
+}
+/* when there are 0 comments */
+#q-nocomment {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+#q-secondNocomment {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
 }
