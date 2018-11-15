@@ -65,12 +65,8 @@
         <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
       </div>
       <div class="col-sm-8">
-        <h2 id="name" class="profileName">
-          Jessica Ngo
-        </h2>
-        <p id="time">
-          3:14 pm
-        </p>
+        <h2 id="name" class="profileName">Jessica Ngo</h2>
+        <p id="time">3:14 pm</p>
       </div>
     </ul>
     <p id="postBody">
@@ -85,9 +81,8 @@
           <a href="acne.html"> #acne </a>
           <a class="btn" data-toggle="collapse" data-target="#q-firstcomment"> View Comments (1) </a>
         </div>
-
-      </div>
-
+  </div>
+  <!-- comment on post -->
         <div class="collapse" id="q-firstcomment">
           <ul class="col-sm-12">
             <div class="col-sm-4" id="image">
@@ -100,9 +95,26 @@
             </div>
           </ul>
           <p id="postBody"> I recommend trying Coola sunscreen. You can get it from Sephora in stores or online! </p>
+          <!-- reply -->
+          <div class="reply">
+            <ul class="col-sm-12">
+              <div class="col-sm-4" id="image">
+                <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+              </div>
+              <div class="col-sm-8">
+                <h3 class="profileName" id="commentName"> Name </h3>
+                <br />
+              </div>
+              <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+              <div class="replyButton">
+                <button type="submit"> Comment </button>
+              </div>
+            </ul>
+          </div>
         </div>
 
 
+<!-- </div> -->
 
   <h3 class="category"> My Recommendations </h3>
   <div class="recommendation" id="post">
@@ -112,15 +124,10 @@
         <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
       </div>
       <div class="col-sm-8">
-        <h2 id="name" class="profileName">
-          Jessica Ngo
-        </h2>
-        <p id="time">
-          2:11 pm
-        </p>
+        <h2 id="name" class="profileName">Jessica Ngo</h2>
+        <p id="time">2:11 pm</p>
       </div>
     </ul>
-
     <p id="postBody">
       I found a really great toner for oily skin!
       It's the Tea Tree Oil Toner from The Body Shop and I use it every day after washing my face with cleanser.
@@ -131,9 +138,26 @@
         <span class="heartCount">4 Likes</span>
         &nbsp; &nbsp;
         <a href="oily.html">#oily</a>
-        <a class="btn" data-toggle="collapse" data-target="#r-firstcomment"> View Comments (0) </a>
+        <a class="btn" data-toggle="collapse" data-target="#r-nocomment"> View Comments (0) </a>
+      </div>
+      <!-- reply -->
+      <div class="collapse" id="r-nocomment">
+        <ul class="col-sm-12">
+          <div class="col-sm-4" id="image">
+            <img src="images/default-avatar.png" class="profpic" height="50px" width="50px"alt="Profile Picture">
+          </div>
+          <div class="col-sm-8">
+            <h3 class="profileName" id="commentName"> Name </h3>
+            <br />
+          </div>
+          <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
+          <div class="replyButton">
+            <button type="submit"> Comment </button>
+          </div>
+        </ul>
       </div>
   </div>
+</div>
   <script src="js/navbar.js"></script>
   <script src="js/tab.js"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
