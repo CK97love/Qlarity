@@ -8,6 +8,7 @@
         <script src="http://code.jquery.com/jquery-latest.js"></script>
         <script src="js/welcomeMessage.js"></script>
         <script src="js/profile.js"></script>
+        <script src="js/comment.js"></script>
           <ul class = "col-sm-12">
             <div id="menu" class= "col-sm-4">
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -100,7 +101,7 @@
                   </div>
                   <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
                   <div class="replyButton">
-                    <button type="submit"> Comment </button>
+                    <button type="submit" onclick="postComment(0)"> Comment </button>
                   </div>
                 </ul>
               </div>
