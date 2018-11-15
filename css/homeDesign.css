@@ -186,13 +186,9 @@ body {
 /* styles reply div underneath comments */
 #commentName {
   text-align: left;
-<<<<<<< HEAD
-  font-size: 20px;
   margin-top: 25px;
-=======
   margin-left: -28px;
   font-size: 21px;
->>>>>>> fb74bfc7f73386a54929a48b11d3e8660beebc52
 }
 
 .reply {
@@ -231,15 +227,14 @@ body {
   margin-left: -42px;
 }
 
-<<<<<<< HEAD
-#breakline {
-  border-color: black;
-=======
 .comment-profpic {
   margin-left: -50px;
   border-radius: 50%;
   text-align: left;
   margin-left: 13px;
   margin-top: 10px;
->>>>>>> fb74bfc7f73386a54929a48b11d3e8660beebc52
+}
+
+#breakline {
+  border-color: black;
 }
