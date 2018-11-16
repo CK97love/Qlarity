@@ -218,6 +218,24 @@ body {
   height: 225px;
   margin-left: -42px;
 }
+#q-nocomment2 {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+
+#q-nocomment3 {
+  border-style: solid;
+  border-width: 0px;
+  border-top-width: 1px;
+  width: 400px;
+  height: 225px;
+  margin-left: -42px;
+}
+
 #q-secondNocomment {
   border-style: solid;
   border-width: 0px;
