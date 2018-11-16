@@ -7,6 +7,9 @@ function writeComment() {
         console.log(div);
         var divClone = div.cloneNode(true);
 
+        var line = document.getElementById("breakline");
+        divClone.prepend(line);
+
         var postBody = divClone.querySelector('#postBody');
         postBody.innerHTML = commentText;
 
@@ -31,7 +34,7 @@ function writeComment() {
         }
 
         console.log(numOfComments);
-        
+
         var collapse = document.getElementsByClassName("collapse")[index];
         var locationOfPost = collapse.querySelector("#postBody");
         if(numOfComments == 1) {
@@ -48,7 +51,7 @@ function writeComment() {
             console.log(locationOfPost);
             locationOfPost.insertAdjacentElement('beforebegin', divClone);
         }
-        console.log(collapse.innerHTML); 
+        console.log(collapse.innerHTML);
 
     }
 }
