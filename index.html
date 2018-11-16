@@ -144,6 +144,7 @@
              <p id="postBody">Hi Maria, I've tried BioOil oil and it works really well!</p>
              <hr id="breakline">
         <!-- this is the second comment on the post -->
+             <div>
             <div class="next-comment">
              <ul class="col-sm-12">
                <div class="col-sm-4" id="image">
@@ -155,6 +156,7 @@
               </div>
          </ul>
             <p id="postBody">Hey Maria, rosehip seed oil has worked so well for me. I suggest you try it too!</p>
+          </div>
             <!-- reply -->
             <div class="reply">
               <ul class="col-sm-12">
@@ -167,7 +169,7 @@
                 </div>
                 <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
                 <div class="replyButton">
-                  <button type="submit"> Comment </button>
+                  <button type="submit" onclick="postComment(1)"> Comment </button>
                 </div>
               </ul>
             </div>
@@ -194,7 +196,7 @@
                 <span class="heartCount">2 Likes</span>
                 &nbsp; &nbsp;
                 <a id="hashtag" href="oily.html">#oily</a>
-                  <!--  <a href="index.html"> View Comments (0) </a> -->
+                  <!--  <a href="index.html"> ts (0) </a> -->
                     <a class="btn" data-toggle="collapse" data-target="#q-nocomment"> View Comments (0) </a>
             </div>
               <!-- reply -->
@@ -209,7 +211,7 @@
                   </div>
                   <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
                   <div class="replyButton">
-                    <button type="submit"> Comment </button>
+                    <button type="submit" onclick="postComment(2)"> Comment </button>
                   </div>
                 </ul>
               </div>
@@ -268,7 +270,7 @@
                       </div>
                       <textarea class="replyBox" placeholder=" Enter your comment here..."></textarea>
                       <div class="replyButton">
-                        <button type="submit"> Comment </button>
+                        <button type="submit" onclick="postComment(3)"> Comment </button>
                       </div>
                     </ul>
                   </div>
