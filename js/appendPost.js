@@ -26,7 +26,7 @@ function appendPost() {
         changeLikeCount.innerHTML = "0 Likes";
 
         var changeHashtag = divClone.querySelector('#hashtag');
-        for(i = 1; i < hashtags.length; i++) {
+        for(i = 0; i < hashtags.length; i++) {
             if(hashtags[i]) {
                 allHashtagsQuestion += hashtags[i];
             }
@@ -56,7 +56,7 @@ function appendPost() {
         changeLikeCount.innerHTML = "0 Likes";
 
         var changeHashtag = divClone.querySelector('#hashtag');
-        for(i = 1; i < hashtags.length; i++) {
+        for(i = 0 ; i < hashtags.length; i++) {
             if(hashtags[i]) {
                 allHashtagsRecommendation += hashtags[i];
             }
