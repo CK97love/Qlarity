@@ -9,6 +9,7 @@
         <script src="js/welcomeMessage.js"></script>
         <script src="js/profile.js"></script>
         <script src="js/comment.js"></script>
+  
           <ul class = "col-sm-12">
             <div id="menu" class= "col-sm-4">
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -102,7 +103,7 @@
                   <div class="replyButton">
                     <button type="submit" onclick="postComment(0)"> Comment </button>
                   </div>
-                </ul>
+                </ul> 
               </div>
             </div>
 <!-- second question -->
@@ -191,7 +192,7 @@
                 <img src="images/heart.png" id="toggleButton" class="heart" height="20px" width="20px" alt="heart" onclick="changeImage(this, 2)">
                 <span class="heartCount">2 Likes</span>
                 &nbsp; &nbsp;
-                <a href="oily.html">#oily</a>
+                <a id="hashtag" href="oily.html">#oily</a>
                   <!--  <a href="index.html"> View Comments (0) </a> -->
                     <a class="btn" data-toggle="collapse" data-target="#q-nocomment"> View Comments (0) </a>
             </div>
@@ -279,5 +280,6 @@
       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+      <script src="js/appendPost.js"></script>
 </body>
 </html>
