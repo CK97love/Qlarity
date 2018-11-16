@@ -63,6 +63,9 @@ function appendPost() {
         }
         changeHashtag.innerHTML = allHashtagsRecommendation;
 
+
+
+
         var questionTab = document.getElementById("recommendationTab");
         questionTab.appendChild(document.createElement("br"));
         questionTab.appendChild(divClone);
