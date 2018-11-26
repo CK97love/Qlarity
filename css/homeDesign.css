@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css?family=Assistant|Noto+Serif+JP');
 #body {
   /*background-color:  #bccad6;*/
   background-image: url("../images/background-image.jpg");
@@ -16,14 +17,15 @@
 .logo {
   /*text-decoration: none;*/
   font-family: SignPainter;
-  font-size: 50px;
+  font-size: 60px;
   text-align: center;
 }
-a:link {
+#home-link:link {
   text-decoration: none;
 }
-a:hover {
+#home-link:hover {
   text-decoration-line: none;
+  color: #337ab7;
 }
 
 #post {
