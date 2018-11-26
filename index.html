@@ -10,6 +10,8 @@
         <script src="js/profile.js"></script>
         <script src="js/comment.js"></script>
 
+        <link href="https://fonts.googleapis.com/css?family=Assistant|Noto+Serif+JP" rel="stylesheet">
+
           <ul class = "col-sm-12">
             <div id="menu" class= "col-sm-4">
               <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
@@ -39,7 +41,8 @@
             </div>
           </div>
           <div class = "col-sm-4">
-            <p id="logo"><a href="index.html"> qlarity </a></p>
+            <!-- <p id="logo"><a href="index.html"> qlarity </a></p> -->
+            <p class="logo"><a href="index.html"> qlarity </a></p>
           </div>
           <div id="signout" class = "col-sm-4">
             <p onload="getUsername()" id="welcomeMessage">Welcome, Jessica!</p>
@@ -47,7 +50,9 @@
           </div>
         </ul>
     </head>
-    <body>
+    <body id="body">
+      <h1 id="home-title"> Home </h1>
+      <br />
     <!-- Tab links -->
     <div class="tab">
       <button class="tablinks" onclick="openCity(event, 'questionTab')" autofocus> View Questions </button>
