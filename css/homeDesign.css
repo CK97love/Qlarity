@@ -263,7 +263,7 @@ body {
   background: white;
   width: 175px;
   height: 30px;
-  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.22), 0 5px 5px rgba(0, 0, 0, 0.22);
   border-radius: 5px;
   margin-left: 5px;
   margin-right: 5px;
@@ -273,6 +273,9 @@ body {
 }
 .tablinks:focus {
   outline: 0;
-  background-color: #C6DDE7;
+  background: #C6DDE7;
   color: black;
+}
+.active {
+  background-color: #C6DDE7;
 }
