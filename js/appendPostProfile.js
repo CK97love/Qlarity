@@ -14,15 +14,13 @@ function appendPost() {
         }
     }
 
-    var currTime;
+    var currTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 
     if(content) {
-        currTime = localStorage.getItem("questionTime");
         var div = document.getElementsByClassName("question")[2];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);
-
-        console.log(divClone);
+        document.getElementById("hashtag").setAttribute("href", "oily.html");
 
         var postBody = divClone.querySelector('#postBody');
         postBody.innerHTML = content;
@@ -55,21 +53,17 @@ function appendPost() {
         changeCollapse.setAttribute("id", "q-nocomment2");
 
         var questionTab = document.getElementById("questionTab");
-
-        var postLocation = document.getElementById("post");
-        postLocation.insertAdjacentElement('beforebegin', divClone);
-        divClone.insertAdjacentElement('afterend', document.createElement("br"));
+        questionTab.appendChild(document.createElement("br"));
+        questionTab.appendChild(divClone);
 
         document.getElementsByClassName("heart")[4].setAttribute("onclick", "changeImage(this,4)");
     }
 
     if(recommendation) {
-        currTime = localStorage.getItem("recommendationTime");
-        var div = document.getElementsByClassName("question")[3];
+        var div = document.getElementsByClassName("question")[2];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);
-
-        console.log(divClone);
+        document.getElementById("hashtag").setAttribute("href", "oily.html");
 
         var postBody = divClone.querySelector('#postBody');
         postBody.innerHTML = recommendation;
@@ -92,29 +86,15 @@ function appendPost() {
         }
         changeHashtag.innerHTML = allHashtagsRecommendation;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 13ed1c74d8060939f37620052d759fb502cee2ac
         var changeComment = divClone.querySelector(".btn");
         changeComment.setAttribute("data-target", "#q-nocomment3");
 
         var changeCollapse = divClone.querySelector('.collapse');
         changeCollapse.setAttribute("id", "q-nocomment3");
-<<<<<<< HEAD
-
-=======
->>>>>>> 13ed1c74d8060939f37620052d759fb502cee2ac
 
         var questionTab = document.getElementById("recommendationTab");
-        console.log(questionTab);
-
-        var recommendationLoc = questionTab.querySelector("#post");
-        recommendationLoc.insertAdjacentElement('beforebegin', divClone);
-        divClone.insertAdjacentElement('afterend', document.createElement("br"));
-
-        // questionTab.appendChild(document.createElement("br"));
-        // questionTab.appendChild(divClone);
+        questionTab.appendChild(document.createElement("br"));
+        questionTab.appendChild(divClone);
 
         document.getElementsByClassName("heart")[5].setAttribute("onclick", "changeImage(this,5)");
     }
