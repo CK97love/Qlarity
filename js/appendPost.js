@@ -114,7 +114,6 @@ function appendPost() {
         var changeCollapse = divClone.querySelector('.collapse');
         changeCollapse.setAttribute("id", "q-nocomment3");
 
-        localStorage.setItem("recommendationClone", divClone);
 
         var questionTab = document.getElementById("recommendationTab");
         console.log(questionTab);

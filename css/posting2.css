@@ -191,3 +191,9 @@ h3 {
   background-color: #337ab7;
   color: white;
 }
+.submitbutton {
+  border-radius: 5px;
+}
+.submitbutton:focus {
+  outline: 0;
+}
