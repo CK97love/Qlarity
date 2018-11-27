@@ -1,6 +1,6 @@
 function writeComment() {
     var commentText = localStorage.getItem("commentText");
-    var currTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    var currTime = localStorage.getItem("currentTime");
 
     if(commentText) {
         var div = document.getElementsByClassName("next-comment")[0];
