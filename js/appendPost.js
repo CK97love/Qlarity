@@ -92,19 +92,13 @@ function appendPost() {
         }
         changeHashtag.innerHTML = allHashtagsRecommendation;
 
-<<<<<<< HEAD
 
-=======
->>>>>>> 13ed1c74d8060939f37620052d759fb502cee2ac
         var changeComment = divClone.querySelector(".btn");
         changeComment.setAttribute("data-target", "#q-nocomment3");
 
         var changeCollapse = divClone.querySelector('.collapse');
         changeCollapse.setAttribute("id", "q-nocomment3");
-<<<<<<< HEAD
 
-=======
->>>>>>> 13ed1c74d8060939f37620052d759fb502cee2ac
 
         var questionTab = document.getElementById("recommendationTab");
         console.log(questionTab);
