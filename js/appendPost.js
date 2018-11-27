@@ -86,16 +86,11 @@ function appendPost() {
         }
         changeHashtag.innerHTML = allHashtagsRecommendation;
 
-<<<<<<< HEAD
-
-
-=======
         var changeComment = divClone.querySelector(".btn");
         changeComment.setAttribute("data-target", "#q-nocomment3");
 
         var changeCollapse = divClone.querySelector('.collapse');
         changeCollapse.setAttribute("id", "q-nocomment3");
->>>>>>> bb8e12c983c5b7afeadbe9a05c8ba635323a256c
 
         var questionTab = document.getElementById("recommendationTab");
         questionTab.appendChild(document.createElement("br"));
