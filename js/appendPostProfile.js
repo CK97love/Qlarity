@@ -14,10 +14,9 @@ function appendPost() {
         }
     }
 
-    var currTime;
+    var currTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
 
     if(content) {
-        currTime = localStorage.getItem("questionTime");
         var div = document.getElementsByClassName("question")[2];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);
@@ -61,7 +60,6 @@ function appendPost() {
     }
 
     if(recommendation) {
-        currTime = localStorage.getItem("recommendationTime");
         var div = document.getElementsByClassName("question")[2];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);
@@ -88,19 +86,11 @@ function appendPost() {
         }
         changeHashtag.innerHTML = allHashtagsRecommendation;
 
-<<<<<<< HEAD
-
-=======
->>>>>>> 13ed1c74d8060939f37620052d759fb502cee2ac
         var changeComment = divClone.querySelector(".btn");
         changeComment.setAttribute("data-target", "#q-nocomment3");
 
         var changeCollapse = divClone.querySelector('.collapse');
         changeCollapse.setAttribute("id", "q-nocomment3");
-<<<<<<< HEAD
-
-=======
->>>>>>> 13ed1c74d8060939f37620052d759fb502cee2ac
 
         var questionTab = document.getElementById("recommendationTab");
         questionTab.appendChild(document.createElement("br"));

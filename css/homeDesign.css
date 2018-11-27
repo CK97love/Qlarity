@@ -5,6 +5,7 @@
   background-size: cover;
   font-family: 'Noto Serif JP', sans-serif;
 }
+
 .question {
   background-color: white;
 }
@@ -17,7 +18,7 @@
 .logo {
   /*text-decoration: none;*/
   font-family: SignPainter;
-  font-size: 60px;
+  font-size: 50px;
   text-align: center;
 }
 #home-link:link {
