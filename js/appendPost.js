@@ -21,7 +21,8 @@ function appendPost() {
         var div = document.getElementsByClassName("question")[2];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);
-        document.getElementById("hashtag").setAttribute("href", "oily.html");
+
+        console.log(divClone);
 
         var postBody = divClone.querySelector('#postBody');
         postBody.innerHTML = content;
@@ -54,18 +55,21 @@ function appendPost() {
         changeCollapse.setAttribute("id", "q-nocomment2");
 
         var questionTab = document.getElementById("questionTab");
-        questionTab.appendChild(document.createElement("br"));
-        questionTab.appendChild(divClone);
+
+        var postLocation = document.getElementById("post");
+        postLocation.insertAdjacentElement('beforebegin', divClone);
+        divClone.insertAdjacentElement('afterend', document.createElement("br"));
 
         document.getElementsByClassName("heart")[4].setAttribute("onclick", "changeImage(this,4)");
     }
 
     if(recommendation) {
         currTime = localStorage.getItem("recommendationTime");
-        var div = document.getElementsByClassName("question")[2];
+        var div = document.getElementsByClassName("question")[3];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);
-        document.getElementById("hashtag").setAttribute("href", "oily.html");
+
+        console.log(divClone);
 
         var postBody = divClone.querySelector('#postBody');
         postBody.innerHTML = recommendation;
@@ -95,8 +99,14 @@ function appendPost() {
         changeCollapse.setAttribute("id", "q-nocomment3");
 
         var questionTab = document.getElementById("recommendationTab");
-        questionTab.appendChild(document.createElement("br"));
-        questionTab.appendChild(divClone);
+        console.log(questionTab);
+
+        var recommendationLoc = questionTab.querySelector("#post");
+        recommendationLoc.insertAdjacentElement('beforebegin', divClone);
+        divClone.insertAdjacentElement('afterend', document.createElement("br"));
+
+        // questionTab.appendChild(document.createElement("br"));
+        // questionTab.appendChild(divClone);
 
         document.getElementsByClassName("heart")[5].setAttribute("onclick", "changeImage(this,5)");
     }
