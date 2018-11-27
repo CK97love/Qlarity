@@ -21,7 +21,7 @@ function change ()
   if (elem.innerHTML=="Follow") {
     elem.innerHTML = "Following";
     elem.style.backgroundColor = "#4CAF50";
-    document.getElementById("sideBarLinks").appendChild(newFollow);
+    document.getElementById("following").appendChild(newFollow);
   }
 
   else {
