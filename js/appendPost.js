@@ -14,9 +14,10 @@ function appendPost() {
         }
     }
 
-    var currTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    var currTime;
 
     if(content) {
+        currTime = localStorage.getItem("questionTime");
         var div = document.getElementsByClassName("question")[2];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);
@@ -60,6 +61,7 @@ function appendPost() {
     }
 
     if(recommendation) {
+        currTime = localStorage.getItem("recommendationTime");
         var div = document.getElementsByClassName("question")[2];
         document.getElementById("hashtag").setAttribute("href", hashtagLink + ".html");
         var divClone = div.cloneNode(true);

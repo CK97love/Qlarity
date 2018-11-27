@@ -4,6 +4,8 @@ function storeQuestion(i){
     var postText = texts[i];
     localStorage.setItem("postQuestionText", postText.value);
     var test = localStorage.getItem("postQuestionText");
+    var currTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    localStorage.setItem("questionTime", currTime);
     console.log(test);
 
     var checks = document.getElementsByClassName("check");
@@ -24,6 +26,8 @@ function storeRecommendation(i) {
     var postText = texts[i];
     localStorage.setItem("postRecommendationText", postText.value);
     var test = localStorage.getItem("postRecommendationText");
+    var currTime = new Date().toLocaleTimeString([], {hour: '2-digit', minute:'2-digit'});
+    localStorage.setItem("recommendationTime", currTime);
     console.log(test);
 
     var checks = document.getElementsByClassName("check");
