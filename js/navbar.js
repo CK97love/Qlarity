@@ -27,8 +27,9 @@ function change ()
   else {
     elem.innerHTML = "Follow";
     elem.style.backgroundColor = "#008CBA";
-    document.getElementById("sideBarLinks").removeChild(document.getElementById("sideBarLinks").lastChild)
-    //$('#sideBarLinks').children().last().remove();
+    //document.getElementById("sideBarLinks").removeChild(document.getElementById("sideBarLinks").lastChild)
+    //document.getElementById("following").removeChild(document.getElementById("following").lastChild);
+    document.getElementById("following").innerHTML = "Following";
   }
 
 }

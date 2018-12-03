@@ -60,10 +60,12 @@ function appendPostProfile() {
         changeHashtag.innerHTML = allHashtagsQuestion;
 
         var changeComment = divClone.querySelector(".btn");
-        changeComment.setAttribute("data-target", "#r-nocomment2");
+        changeComment.setAttribute("data-target", "#q-firstcomment2");
+        console.log(changeComment);
 
-        // var changeCollapse = divClone.querySelector('.collapse');
-        // changeCollapse.setAttribute("id", "r-nocomment2");
+        var changeCollapse = divClone.querySelector('.collapse');
+        console.log(divClone);
+        changeCollapse.setAttribute("id", "q-firstcomment2");
 
         console.log(divClone);
 
@@ -111,10 +113,10 @@ function appendPostProfile() {
         changeHashtag.innerHTML = allHashtagsRecommendation;
 
         var changeComment = divClone.querySelector(".btn");
-        changeComment.setAttribute("data-target", "#r-nocomment3");
+        changeComment.setAttribute("data-target", "#r-nocomment2");
 
-        // var changeCollapse = divClone.querySelector('.collapse');
-        // changeCollapse.setAttribute("id", "r-nocomment2");
+        var changeCollapse = divClone.querySelector('.collapse');
+        changeCollapse.setAttribute("id", "r-nocomment2");
 
         console.log(divClone);
 
